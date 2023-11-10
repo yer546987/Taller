@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="reporte"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="velocidad del viento (en Km/h)" />
+
+    <EditText
+        android:id="@+id/edtVelocidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperatura " />
+
+    <EditText
+        android:id="@+id/edtTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione una zona"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/Combos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAlfa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zona alfa" />
+
+        <RadioButton
+            android:id="@+id/rbBeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zona beta" />
+
+        <RadioButton
+            android:id="@+id/rbGamma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zona Gamma" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="guardar"
+        android:text="Registrar" />
+
+    <Button
+        android:id="@+id/btnReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="reporte"
+        android:text="Reporte" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cerrarsession"
+        android:text="Cerrar sesion" />
+
+</LinearLayout>
